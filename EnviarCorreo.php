@@ -42,5 +42,5 @@ try {
       window.history.go(-1);
       </script>';
 } catch (Exception $e) {
-    echo "Error al enviar Mensaje : {$mail->ErrorInfo}";
+    echo "Error al enviar Mensaje : '$mail->ErrorInfo;
 }
