@@ -2,7 +2,7 @@
 $name = $_POST["name"];
 $email = $_POST["email"];
 $message = $_POST["message"];
-$body = "Name: " . $name . "<br>Correo: " . $email . "<br>,message: " . $message;  
+$body = "name: " . $name . "<br>email: " . $email . "<br>,message: " . $message;  
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
