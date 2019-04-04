@@ -26,10 +26,7 @@ try {
     //Recipients
     $mail->setFrom('servercovep@gmail.com', $name);
     $mail->addAddress('empresacovep@gmail.com', 'Empresa COVEP');     // Add a recipient
-    $mail->addAddress('duvanpulgar97@gmail.com');               // Name is optional
-    $mail->addAddress('alejoospinom@gmail.com'); 
-    $mail->addAddress('alfredelahoz@hotmail.com'); 
-   
+ 
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
