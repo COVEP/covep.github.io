@@ -2,7 +2,7 @@
 $name = $_POST["name"];
 $email = $_POST["email"];
 $message = $_POST["message"];
-$Body = "Name: " . $name . "<br>Correo: " . $email . "<br>,message: " . $message;  
+$body = "Name: " . $name . "<br>Correo: " . $email . "<br>,message: " . $message;  
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -34,7 +34,7 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Usuario COVEP';
-    $mail->Body    = $Body;
+    $mail->Body    = $body;
     $mail->CharSet =  'UTF-8';
   
 
