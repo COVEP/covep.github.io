@@ -7,9 +7,9 @@ $body = "name: " . $name . "<br>email: " . $email . "<br>,message: " . $message;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'PHPMailer/Exception.php';
-require 'PHPMailer/PHPMailer.php';
-require 'PHPMailer/SMTP.php';
+require 'covep.github.io/PHPMailer/Exception.php';
+require 'covep.github.io/PHPMailer/PHPMailer.php';
+require 'covep.github.io/PHPMailer/SMTP.php';
 
 $mail = new PHPMailer(true);
 
