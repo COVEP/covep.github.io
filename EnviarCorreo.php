@@ -10,12 +10,14 @@ use PHPMailer\PHPMailer\Exception;
 require 'PHPMailer/Exception.php';
 require 'PHPMailer/PHPMailer.php';
 require 'PHPMailer/SMTP.php';
+require 'PHPMailer/OAuth.php';
 
 $mail = new PHPMailer(true);
+$meil-> isSMTP();
 
 try {
     //Server settings
-    $mail->SMTPDebug = 0;                                       // Enable verbose debug output
+    $mail->SMTPDebug = 2;                                       // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
     $mail->Host       = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
