@@ -13,7 +13,6 @@ require 'PHPMailer/SMTP.php';
 require 'PHPMailer/OAuth.php';
 
 $mail = new PHPMailer(true);
-$meil->isSMTP();
 
 try {
     //Server settings
