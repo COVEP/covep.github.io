@@ -1,8 +1,8 @@
 <?php
-$nombre = $_POST["nombre"];
+$name = $_POST["name"];
 $email = $_POST["email"];
 $message = $_POST["message"];
-$body = "nombre: " . $nombre . "<br>email: " . $email . "<br>,message: " . $message;  
+$body = "name: " . $name . "<br>email: " . $email . "<br>,message: " . $message;  
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -27,7 +27,7 @@ try {
     $mail->Port       = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('servercovep@gmail.com', $nombre);
+    $mail->setFrom('servercovep@gmail.com', $name);
     $mail->addAddress('empresacovep@gmail.com', 'Empresa COVEP');     // Add a recipient
  
 
