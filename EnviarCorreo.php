@@ -1,8 +1,8 @@
 <?php
-$name = $_POST["name"];
+$nombre = $_POST["nombre"];
 $email = $_POST["email"];
 $message = $_POST["message"];
-$body = "name: " . $name . "<br>email: " . $email . "<br>,message: " . $message;  
+$body = "nombre: " . $nombre . "<br>email: " . $email . "<br>,message: " . $message;  
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -13,7 +13,7 @@ require 'PHPMailer/SMTP.php';
 require 'PHPMailer/OAuth.php';
 
 $mail = new PHPMailer(true);
-$meil-> isSMTP();
+$meil->isSMTP();
 
 try {
     //Server settings
@@ -27,7 +27,7 @@ try {
     $mail->Port       = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('servercovep@gmail.com', $name);
+    $mail->setFrom('servercovep@gmail.com', $nombre);
     $mail->addAddress('empresacovep@gmail.com', 'Empresa COVEP');     // Add a recipient
  
 
